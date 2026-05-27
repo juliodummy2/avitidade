@@ -14,8 +14,8 @@ test('Deve fazer login no SENAI, acessar o painel do aluno e buscar na estante v
   const inputSenha = page.locator('input[type="password"], input[name="password"], #password');
  
   console.log('✍️ Inserindo e-mail e senha...');
-  await inputEmail.fill('julio.c.xavier8@aluno.senai.br');
-  await inputSenha.fill('2099v1#jc!Y');
+  await inputEmail.fill('teste@aluno.com');
+  await inputSenha.fill('123456');
 
   const botaoEntrar = page.getByRole('button', { name: /entrar|login|acessar/i });
   await botaoEntrar.click();
