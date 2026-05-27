@@ -5,7 +5,7 @@ test.use({ launchOptions: { slowMo: 3000 } });
 
 test('Deve fazer login no SENAI, acessar o painel do aluno e buscar na estante virtual', async ({ page }) => {
  
-  const urlLogin = 'https://identidade.senai.br/authenticationendpoint/login.do?RelayState=https%3A%2F%2Fmeusenai.senai.br%2F&commonAuthCallerPath=%2Fsamlsso&forceAuth=false&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=28315d24-1a0b-4b74-b293-960efcc11bb8&relyingParty=https%3A%2F%2Fmeusenai.senai.br&type=samlsso&sp=meusenai.senai.br&isSaaSApp=false&authenticators=BasicAuthenticator%3ALOCAL&#39;
+  const urlLogin = 'https://identidade.senai.br/authenticationendpoint/login.do?RelayState=https%3A%2F%2Fmeusenai.senai.br%2F&commonAuthCallerPath=%2Fsamlsso&forceAuth=false&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=28315d24-1a0b-4b74-b293-960efcc11bb8&relyingParty=https%3A%2F%2Fmeusenai.senai.br&type=samlsso&sp=meusenai.senai.br&isSaaSApp=false&authenticators=BasicAuthenticator%3ALOCAL&#39'
  
   console.log('🎬 Iniciando a navegação (em câmera lenta)...');
   await page.goto(urlLogin);
